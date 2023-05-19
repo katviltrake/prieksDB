@@ -23,3 +23,9 @@ model players {
   email         String
   player_scores player_scores[]
 }
+
+model games {
+  id         BigInt @id @default(autoincrement())
+  title      String
+  difficulty String
+}
